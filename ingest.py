@@ -2,14 +2,14 @@
 import psycopg
 import json
 
-from config_env import DB_URL
+from config_env import DB_URL, EMBEDDING_MODEL_LOCAL_PATH
 from sentence_transformers import SentenceTransformer
 
 def load_dataset(file_path='toydataset.json'):
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def instantiate_model(model_name='paraphrase-multilingual-MiniLM-L12-v2'):
+def instantiate_model(model_name=EMBEDDING_MODEL_LOCAL_PATH):
     model = SentenceTransformer(model_name)
     return model
 
