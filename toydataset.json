@@ -1,0 +1,167 @@
+[
+    {
+        "chunk_id": "PRES_001_p10_c001",
+        "document_id": "PRES_001",
+        "page": 11,
+        "section": "Saúde",
+        "text": "Expandir serviços de telemedicina para municípios do interior",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c002",
+        "document_id": "PRES_001",
+        "page": 12,
+        "section": "Saúde",
+        "text": "Ampliar o atendimento de saúde por meio de consultas remotas",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c003",
+        "document_id": "PRES_001",
+        "page": 13,
+        "section": "Saúde",
+        "text": "Criar pólos regionais de atendimento médico digital",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c004",
+        "document_id": "PRES_001",
+        "page": 14,
+        "section": "Economia",
+        "text": "Reduzir os impostos para pequenas empresas",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c005",
+        "document_id": "PRES_001",
+        "page": 10,
+        "section": "Economia",
+        "text": "Manter a carga tributária atual das pequenas empresas",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c006",
+        "document_id": "PRES_001",
+        "page": 11,
+        "section": "Geral",
+        "text": "Aumentar o efetivo policial nas áreas de fronteira",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c007",
+        "document_id": "PRES_001",
+        "page": 12,
+        "section": "Geral",
+        "text": "Construir 100 novas creches em período integral",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c008",
+        "document_id": "PRES_001",
+        "page": 13,
+        "section": "Geral",
+        "text": "Revitalizar a malha ferroviária para escoamento de safra",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c009",
+        "document_id": "PRES_001",
+        "page": 14,
+        "section": "Geral",
+        "text": "Implementar sistema de reconhecimento facial na segurança pública",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c010",
+        "document_id": "PRES_001",
+        "page": 10,
+        "section": "Geral",
+        "text": "Dobrar o piso salarial dos professores da rede básica",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c011",
+        "document_id": "PRES_001",
+        "page": 11,
+        "section": "Geral",
+        "text": "Privatizar rodovias estaduais que apresentam déficit de manutenção",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c012",
+        "document_id": "PRES_001",
+        "page": 12,
+        "section": "Geral",
+        "text": "Fomentar a agricultura familiar com linhas de crédito subsidiadas",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c013",
+        "document_id": "PRES_001",
+        "page": 13,
+        "section": "Geral",
+        "text": "Zerar o desmatamento ilegal através de monitoramento via satélite",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c014",
+        "document_id": "PRES_001",
+        "page": 14,
+        "section": "Geral",
+        "text": "Incentivar a instalação de painéis solares em residências de baixa renda",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    },
+    {
+        "chunk_id": "PRES_001_p10_c015",
+        "document_id": "PRES_001",
+        "page": 10,
+        "section": "Geral",
+        "text": "Criar um programa de bolsa permanência para estudantes universitários",
+        "candidate": "Fictício Silva",
+        "party": "PEX",
+        "office": "Presidente",
+        "state": "BR"
+    }
+]
