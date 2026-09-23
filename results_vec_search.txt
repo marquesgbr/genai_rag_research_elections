@@ -1,0 +1,102 @@
+Consulta parecida com trecho existente
+
+QUERY: melhorar o atendimento médico remoto
+
+TOP-3 RESULTADOS
+
+
+
+1. PRES_001_p10_c002 | score: 0.89 | página: 12 | seção: Saúde
+
+   Ampliar o atendimento de saúde por meio de consultas remotas
+
+
+
+2. PRES_001_p10_c003 | score: 0.73 | página: 13 | seção: Saúde
+
+   Criar pólos regionais de atendimento médico digital
+
+
+
+3. PRES_001_p10_c001 | score: 0.63 | página: 11 | seção: Saúde
+
+   Expandir serviços de telemedicina para municípios do interior
+
+
+
+Consulta semelhante à primeira mas com palavras diferentes
+
+QUERY: maior disponibiliade e qualidade de serviços médicos à distância
+
+TOP-3 RESULTADOS
+
+
+
+1. PRES_001_p10_c002 | score: 0.83 | página: 12 | seção: Saúde
+
+   Ampliar o atendimento de saúde por meio de consultas remotas
+
+
+
+2. PRES_001_p10_c003 | score: 0.67 | página: 13 | seção: Saúde
+
+   Criar pólos regionais de atendimento médico digital
+
+
+
+3. PRES_001_p10_c001 | score: 0.63 | página: 11 | seção: Saúde
+
+   Expandir serviços de telemedicina para municípios do interior
+
+
+
+Consulta ambígua com resultados semanticamente diferentes mas similaridades altas
+
+QUERY: ajuste de impostos para pequenas empresas
+
+TOP-3 RESULTADOS
+
+
+
+1. PRES_001_p10_c004 | score: 0.92 | página: 14 | seção: Economia
+
+   Reduzir os impostos para pequenas empresas
+
+
+
+2. PRES_001_p10_c005 | score: 0.89 | página: 10 | seção: Economia
+
+   Manter a carga tributária atual das pequenas empresas
+
+
+
+3. PRES_001_p10_c012 | score: 0.39 | página: 12 | seção: Geral
+
+   Fomentar a agricultura familiar com linhas de crédito subsidiadas
+
+
+
+Consulta sem resultados semanticamente relacionados
+
+QUERY: criar bolsa 5G para estagiários
+
+TOP-3 RESULTADOS
+
+
+
+1. PRES_001_p10_c003 | score: 0.27 | página: 13 | seção: Saúde
+
+   Criar pólos regionais de atendimento médico digital
+
+
+
+2. PRES_001_p10_c008 | score: 0.25 | página: 13 | seção: Geral
+
+   Revitalizar a malha ferroviária para escoamento de safra
+
+
+
+3. PRES_001_p10_c013 | score: 0.24 | página: 13 | seção: Geral
+
+   Zerar o desmatamento ilegal através de monitoramento via satélite 
+
