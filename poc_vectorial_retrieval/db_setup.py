@@ -1,5 +1,5 @@
 import psycopg
-from config_env import DB_URL, EMBEDDING_VECTOR_DIM
+from poc_rag.config_env import DB_URL, EMBEDDING_VECTOR_DIM
 
 def init_db_table():
     try:
