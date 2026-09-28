@@ -1,3 +1,8 @@
 psycopg #>=3.3.6
 sentence-transformers #>=6.0.1
 python-dotenv #>=1.2.3
+agno
+pydantic
+google-generativeai # A biblioteca oficial do Google exigida pelo Agno para rodar o Gemini)
+google-genai
+polars # Para ler o arquivo .parquet na sua função carregar_dados_silver)
