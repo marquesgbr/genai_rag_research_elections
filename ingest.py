@@ -1,11 +1,12 @@
 
 import psycopg
 import json
+from pathlib import Path
 
 from config_env import DB_URL, EMBEDDING_MODEL_LOCAL_PATH
 from sentence_transformers import SentenceTransformer
 
-def load_dataset(file_path='toydataset.json'):
+def load_dataset(file_path="data/toydataset.json"):
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
@@ -52,6 +53,9 @@ def insert_chunks_into_db(chunks: list[dict]):
                         chunk['page'],
                         chunk['section'],
                         chunk['text'],
+                        chunk['chunk_index'],
+                        chunk['n_chars'],
+                        chunk['dataset_version'],
                         chunk['candidate'],
                         chunk['party'],
                         chunk['office'],
@@ -64,20 +68,22 @@ def insert_chunks_into_db(chunks: list[dict]):
                 
     except Exception as e:
         print(f"Error inserting chunks into the database: {e}")
-        raise e
+        raise
+
+
+def ingest_dataset(file_path: str | Path = "data/toydataset.json") -> None:
+    chunks = load_dataset(file_path)
+    chunks_with_embeddings = generate_embeddings(chunks)
+    insert_chunks_into_db(chunks_with_embeddings)
 
 def main():
     print("Starting data ingestion process. This may take a few minutes depending on the number of chunks"
     " and the model used for generating embeddings.")
 
-    dataset_jsonfile = 'toydataset.json'
-    chunks = load_dataset(dataset_jsonfile)
-
     print("Generating embeddings for the chunks...")
-    chunks_with_embeddings = generate_embeddings(chunks)
-
+    dataset_jsonfile = "data/toydataset.json"
     print("Connecting to the database and inserting chunks with embeddings...")
-    insert_chunks_into_db(chunks_with_embeddings)
+    ingest_dataset(dataset_jsonfile)
     
     print("Data ingestion completed successfully.")
 

@@ -36,6 +36,7 @@ def init_db_table():
                 
     except Exception as e:
         print(f"Error initializing the database: {e}")
+        raise
 
 
 if __name__ == "__main__":
