@@ -160,6 +160,36 @@ O script faz algumas consultas de exemplo e mostra no terminal o `chunk_id`, o s
 
 Para testar outras consultas, altere os textos da função `main` em [vec_search.py](vec_search.py).
 
+### 7. Extraia propostas estruturadas
+
+O mesmo dataset pode ser lido em JSON ou Parquet pelo pipeline de extração. Para materializar o JSON como Parquet Silver:
+
+```powershell
+python -c "from schema import json_to_parquet; json_to_parquet('data/toydataset.json', 'data/silver.parquet')"
+```
+
+Com `GEMINI_API_KEY` definida no `.env`, execute um smoke test com apenas um chunk:
+
+```powershell
+python agent_structured_extraction.py --input data/silver.parquet --output data/StructuredProposals.parquet --limit 1
+```
+
+O arquivo final reúne as colunas Silver e os campos de `ProposalSchema`. Reexecutar o comando atualiza os chunks já processados por `chunk_id` e adiciona os novos, sem duplicar linhas.
+
+Para testar somente a extração de um chunk, sem executar o pipeline completo e sem usar pytest:
+
+```powershell
+python smoke_test_structured_extraction.py --input data/silver.parquet --row 0
+```
+
+O script cria `data/silver.parquet` a partir de `data/toydataset.json` se o Parquet ainda não existir, envia apenas o chunk indicado para o Gemini e imprime os campos extraídos no terminal. Use `--row 1`, por exemplo, para testar outro chunk.
+
+Para validar a transformação sem chamar a API:
+
+```powershell
+python -m pytest tests/test_structured_extraction.py
+```
+
 ## Usando o modelo diretamente do Hugging Face
 
 Não é obrigatório salvar o modelo localmente. O `SentenceTransformer` também aceita o identificador do modelo no Hugging Face:
@@ -202,6 +232,8 @@ Assim, quando `vec_search.py` executar `SentenceTransformer(EMBEDDING_MODEL_LOCA
 | `ingest.py` | Gera e persiste os embeddings |
 | `vec_search.py` | Executa a busca por similaridade |
 | `toydataset.json` | Dataset usado no exemplo |
+| `schema.py` | Lê JSON/Parquet Silver e define os schemas estruturados |
+| `agent_structured_extraction.py` | Extrai propostas e persiste o Parquet final |
 
 ## Observações
 
