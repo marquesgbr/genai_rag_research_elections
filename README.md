@@ -56,7 +56,7 @@ As dependências estão em [requirements.txt](requirements.txt):
 
 ## Configuração do ambiente
 
-Crie e ative um ambiente virtual:
+Crie e ative um ambiente virtual ou use um já existente:
 
 ```powershell
 python -m venv .venv
@@ -188,13 +188,13 @@ Como alternativa, `EMBEDDING_MODEL_LOCAL_PATH` pode apontar diretamente para um 
 Para validar a extração de um único chunk usando a API do Gemini:
 
 ```powershell
-python smoke_test_structured_extraction.py --input data/toydataset.json --row 0
+python tests/smoke_test_structured_extraction.py --input data/toydataset.json --row 0
 ```
 
 Para verificar uma chamada simples ao Gemini por meio do Agno:
 
 ```powershell
-python testeapi.py
+python tests/test_api.py
 ```
 
 O pipeline vetorial pode ser verificado de ponta a ponta com o comando descrito na seção anterior, desde que o PostgreSQL esteja em execução e o modelo de embeddings esteja disponível.

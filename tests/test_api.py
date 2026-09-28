@@ -1,12 +1,11 @@
 """Teste mínimo de geração de texto com Gemini por meio do Agno.
 
 Uso:
-    python testeapi.py
-    python testeapi.py "Qual é a importância da educação?"
+    python tests/test_api.py
+    python tests/test_api.py "Qual é a importância da educação?"
 """
 
 import json
-import os
 import sys
 
 from agno.agent import Agent
