@@ -2,7 +2,7 @@
 import psycopg
 import json
 
-from poc_rag.config_env import DB_URL, EMBEDDING_MODEL_LOCAL_PATH
+from config_env import DB_URL, EMBEDDING_MODEL_LOCAL_PATH
 from sentence_transformers import SentenceTransformer
 
 def load_dataset(file_path='toydataset.json'):
@@ -28,13 +28,16 @@ def insert_chunks_into_db(chunks: list[dict]):
 
                 # %s placeholders are used to let psycopg handle the proper formatting required
                 insert_query = """
-                INSERT INTO chunks (chunk_id, document_id, page, section, text, candidate, party, office, state, embedding) 
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                INSERT INTO chunks (chunk_id, document_id, page, section, text, chunk_index, n_chars, dataset_version, candidate, party, office, state, embedding)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (chunk_id) DO UPDATE SET
                     document_id = EXCLUDED.document_id,
                     page = EXCLUDED.page,
                     section = EXCLUDED.section,
                     text = EXCLUDED.text,
+                    chunk_index = EXCLUDED.chunk_index,
+                    n_chars = EXCLUDED.n_chars,
+                    dataset_version = EXCLUDED.dataset_version,
                     candidate = EXCLUDED.candidate,
                     party = EXCLUDED.party,
                     office = EXCLUDED.office,

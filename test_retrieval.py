@@ -1,7 +1,7 @@
 import pytest
-from poc_rag.config_env import EMBEDDING_MODEL_LOCAL_PATH
+from config_env import EMBEDDING_MODEL_LOCAL_PATH
 from sentence_transformers import SentenceTransformer
-from poc_rag.vec_search import search_similar_texts
+from vec_search import search_similar_texts
 
 
 @pytest.fixture(scope="module")

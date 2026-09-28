@@ -42,6 +42,9 @@ for i, texto in enumerate(textos, start=1):
         "page": 10 + (i % 5), 
         "section": section,
         "text": texto,
+        "chunk_index": i,
+        "n_chars": len(texto),
+        "dataset_version": "v1.2",
         "candidate": "Fictício Silva",
         "party": "PEX",
         "office": "Presidente",
@@ -50,7 +53,7 @@ for i, texto in enumerate(textos, start=1):
     dataset.append(chunk)
 
 # Export to toydataset.json
-with open("toydataset.json", "w", encoding="utf-8") as f:
+with open("data/toydataset.json", "w", encoding="utf-8") as f:
     json.dump(dataset, f, ensure_ascii=False, indent=4)
 
 print("Sample dataset 'toydataset.json' generated successfully.")

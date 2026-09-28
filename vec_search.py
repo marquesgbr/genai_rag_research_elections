@@ -1,5 +1,5 @@
 import psycopg
-from poc_rag.config_env import DB_URL, EMBEDDING_MODEL_LOCAL_PATH
+from config_env import DB_URL, EMBEDDING_MODEL_LOCAL_PATH
 from sentence_transformers import SentenceTransformer
 
 

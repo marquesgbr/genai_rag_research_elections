@@ -1,5 +1,5 @@
 import psycopg
-from poc_rag.config_env import DB_URL, EMBEDDING_VECTOR_DIM
+from config_env import DB_URL, EMBEDDING_VECTOR_DIM
 
 def init_db_table():
     try:
@@ -19,6 +19,9 @@ def init_db_table():
                     page INT NOT NULL, 
                     section VARCHAR(100),
                     text TEXT NOT NULL,
+                    chunk_index INT,
+                    n_chars INT,
+                    dataset_version VARCHAR(100),
                     candidate VARCHAR(100),
                     party VARCHAR(50),
                     office VARCHAR(50),
