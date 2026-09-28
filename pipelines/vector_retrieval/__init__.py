@@ -1,0 +1,1 @@
+"""Vector retrieval pipeline backed by PostgreSQL and pgvector."""

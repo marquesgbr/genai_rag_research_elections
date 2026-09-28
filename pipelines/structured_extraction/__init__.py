@@ -1,0 +1,1 @@
+"""Structured proposal extraction pipeline."""
