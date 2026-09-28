@@ -31,7 +31,9 @@ def show_results(results):
         print(f"{i}. {chunk_id} | score: {similarity:.2f} | página: {page} | seção: {section}")
         print(f"   {text}\n")
 
-def main():
+
+
+def test_cases():
     k = 3
     model = SentenceTransformer(EMBEDDING_MODEL_LOCAL_PATH)
 
@@ -62,4 +64,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    test_cases()
